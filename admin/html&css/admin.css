@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 1200px;
+    height: 100px;
+    margin: 0 150px;
+}
+.topname{
+    height: 30px;
+    font-size: 20px;
+}
+.nav{
+    width: 1200px;
+    height: 70px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 1200px;
+    height: 600px;
+    margin: 0 150px;
+}
+.row{
+    height: 50px;
+}
+.row-title{
+    height: 50px;
+}
+.row-content{
+     height: 550px;
+}
+.row-mb10{
+    height: 60px;
+}
+.row-mb9{
+    height: 120px;
+}
+.row-mb8{
+    height: 30px;
+}
+.row-mb7{
+    height: 180px;
+}
+#input{
+    width: 1200px;
+    height: 30px;
+}
+#input1{
+    width: 1200px;
+    height: 100px;
+}
+table{
+    width: 900px;
+    border: 1px solid black;
+}
+table tr td{
+    padding: 25px 25px ;
+}
+table tbody tr{
+    height: 80px;
+    width: 900px;
+    background-color: yellow;
+}
