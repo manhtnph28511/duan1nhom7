@@ -7,6 +7,9 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/5dd6f63e97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="view/trangchu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </head>
 <body>
     <div class="top">

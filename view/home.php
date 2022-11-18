@@ -55,6 +55,11 @@
             </div>
         </div>
         <h1> SẢN PHẨM PHỔ BIẾN</h1>
+        <?php
+        foreach($sanpham as $sanpham){
+            extract($sanpham);
+        }
+        ?>
         <div class="pro2">
             <div class="prod2">
                 <div class="content">

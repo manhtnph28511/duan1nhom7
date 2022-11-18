@@ -14,7 +14,7 @@
                         <input id="input" type="text" name="tenloai" >
                     </div>
                     <div class="row-mb10">
-                        <input type="submit" name="themmoi" value="thêm mớii">
+                        <input type="submit" name="themmoi" value="thêm mới">
                         <input type="reset" value="nhập lại">
                         <a href="index.php?act=listdm"><input type="button" value="danh sách"></a>
                     </div>
