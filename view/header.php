@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="view/trangchu.css"> 
     <script src="https://kit.fontawesome.com/5dd6f63e97.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="view/trangchu.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
- 
-</head>
+    
+<head>
+  
 <body>
     <div class="top">
         <div class="logo">
@@ -18,16 +17,16 @@
         </div>
         <div class="search">
             
-           <input type="search" placeholder="search">
+           <input type="search" id="search" placeholder="search">
            <i class="fas fa-search"></i>
         </input>
         </div>
         <div class="log">
             <div class="inout">
-                <i class="fas fa-user-plus" id="icon"></i>
-                <i class="fas fa-sign-out-alt"  id="icon"></i>
-                <i class="fas fa-cart-arrow-down"  id="icon"></i>
-                 <i class="far fa-user" id="icon"></i>
+                <a href="index.php?act=dangki" id="icon"><i class="fas fa-user-plus" ></i></a>
+                <a href="index.php?act=thoat" id="icon"><i class="fas fa-sign-out-alt"  ></i></a>
+                <a href="index.php?act=mybill" id="icon"><i class="fas fa-cart-arrow-down"  ></i></a>
+                 <a href="index.php?act=dangnhap" id="icon"><i class="far fa-user" ></i></a>
             </div>
         </div>
     </div>
@@ -52,9 +51,10 @@
             </ul>
         </nav>
         <div class="phai">
-            <i class="fab fa-facebook-square" id="icon2"></i>
+    
+             <i class="fab fa-facebook-square" id="icon2"></i>
             <i class="fab fa-instagram" id="icon2"></i>
             <i class="fab fa-weibo" id="icon2"></i>
-            <i class="fab fa-google-plus-g" id="icon2"></i>
+            <i class="fab fa-google-plus-g" id="icon2"></i> 
         </div>
     </header>

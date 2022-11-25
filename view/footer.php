@@ -1,4 +1,4 @@
-<div class="footer">mabmadjdf@copyright</div>
+<div class="footer"><img src="/duan1/img/logowc.jpeg" alt=""></div>
 
 </body>
 </html>

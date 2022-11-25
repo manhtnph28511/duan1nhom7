@@ -55,110 +55,35 @@
             </div>
         </div>
         <h1> SẢN PHẨM PHỔ BIẾN</h1>
+        <div class="pro2">
         <?php
-        foreach($sanpham as $sanpham){
-            extract($sanpham);
+         $i=0;
+         foreach($spnew as $sp){
+             extract($sp);
+             $linksp="index.php?act=sanphamct&idsp=".$id;
+             $hinh=$img_path.$img;
+             if(($i==2)||($i==5)||($i==8)){
+                 $mr="mr";
+             }else{
+                 $mr="";
+             }
+             echo '<div class="prod2" '.$mr.'>
+             <div class="content">
+                 <img src="'.$hinh.'" alt="">
+             </div>
+             <div class="name">'.$name.'</div>
+             <div class="price">'.$price.'</div>
+             <form action="index.php?act=addtocart" method="post">
+                <input type="hidden" name="id" value="'.$id.'">
+                <input type="hidden" name="name" value="'.$name.'">
+                <input type="hidden" name="img" value="'.$img.'">
+                <input type="hidden" name="price" value="'.$price.'">
+                <input type="submit" name="addtocart" id="add"value="thêm vào giỏ hàng" >
+            </form>
+         </div>';
+            $i+=1;
         }
         ?>
-        <div class="pro2">
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-            <div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div><div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div><div class="prod2">
-                <div class="content">
-                    <img src="/duan1/img/ipad.jpg" alt="">
-                </div>
-                <div class="name">ipad</div>
-                <div class="price">$30</div>
-            </div>
-        </div>
-    </div>
+        
     <div class="below">
-        <div class="danhmuc">
-           <h1>Danh mục</h1>
-           <div class="dm1">
-            <div class="dmimg">
-                <img src="/duan1/img/xiaomi.jpg" alt="">
-            </div>
-            <div class="ten">adjdkafbha</div>
-           </div>
-           <div class="dm1">
-            <div class="dmimg">
-                <img src="/duan1/img/xiaomi.jpg" alt="">
-            </div>
-            <div class="ten">adjdkafbha</div>
-           </div>
-           <div class="dm1">
-            <div class="dmimg">
-                <img src="/duan1/img/xiaomi.jpg" alt="">
-            </div>
-            <div class="ten">adjdkafbha</div>
-           </div>
-           <div class="dm1">
-            <div class="dmimg">
-                <img src="/duan1/img/xiaomi.jpg" alt="">
-            </div>
-            <div class="ten">adjdkafbha</div>
-           </div>
-        </div>
-        <div class="topbanchay">
-           <h1>TOP bán chạy</h1>
-           <div class="dm1">
-            <div class="dmimg">
-                <img src="/duan1/img/samsung.webp" alt="">
-            </div>
-            <div class="ten">dcKVbubaoi</div>
-           </div>
-        </div>
     </div>
