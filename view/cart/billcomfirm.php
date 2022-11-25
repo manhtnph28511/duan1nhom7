@@ -35,7 +35,7 @@
             </table>
         </div>
         <div class="dat">
-            <h2>Chi tiết giỏ hàng</h2>
+            <h2>Chi tiết giỏ hàng<h2>
             <table> 
                 <?php
                 bill_chi_tiet($billct);
