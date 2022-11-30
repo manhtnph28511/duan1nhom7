@@ -22,6 +22,9 @@
                    <th>ma loai</th>
                    <th>ten san pham</th>
                    <th>hinh</th>
+                   <th>ram</th>
+                   <th>rom</th>
+                   <th>color</th>
                    <th>gia</th>
                    <th>mo ta</th>
                    <th>luot xem</th>
@@ -43,6 +46,9 @@
                     <td>'.$id.'</td>
                     <td>'.$name.'</td>
                     <td>'.$hinh.'</td>
+                    <td>'.$ram.'</td>
+                    <td>'.$rom.'</td>
+                    <td>'.$color.'</td>
                     <td>'.$price.'</td>
                     <td>'.$mota.'</td>
                     <td>'.$luotxem.'</td>
