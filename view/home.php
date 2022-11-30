@@ -180,9 +180,32 @@
                     </div>
                 </div>
                 <div class="product-rate">
-                    <p class="product-name name2 name3"><span class="product_name_color">Top</span> Rated</p>
+                    <p class="product-name name2 name3"><span class="product_name_color">Top</span> Sản phẩm bán chạy</p>
                     <div class="rate-content">
-                        <div class="content_item-child">
+                    <?php
+                    foreach ($dstop10 as $sp) {
+                       extract($sp);
+                       $linksp="index.php?act=sanphamct&idsp=".$id;
+                       $img=$img_path.$img;
+                       echo ' <div class="content_item-child">
+                       <img src="'.$img.'" alt="">
+                       <div class="item__child-info">
+                           <div class="name name-rate"> <a href="'.$linksp.'">'.$name.'</a></div>
+                       </div>
+                   </div>';
+                    }
+                    ?>
+                        <!-- <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate"><a href="'.$linksp.'">'.$name.'</a></div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <div class="content_item-child">
                             <img src="./img/pen.png" alt="">
                             <div class="item__child-info">
                                 <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
@@ -201,17 +224,7 @@
                                     <div class="price-before">10.000.000</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="content_item-child">
-                            <img src="./img/pen.png" alt="">
-                            <div class="item__child-info">
-                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
-                                <div class="price-pro">
-                                    <div class="price">18.000.000đ</div>
-                                    <div class="price-before">10.000.000</div>
-                                </div>
-                            </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="product-rate">
