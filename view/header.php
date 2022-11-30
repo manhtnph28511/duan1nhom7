@@ -19,8 +19,11 @@
                 <a href="./index.php"><img src="https://electronic-09.web4s.vn/uploads/plugin/setting/3/ph-ki-n-cong-ngh-logo.jpg" alt=""></a>
             </div>
             <div class="search">
-                <input type="search" placeholder="Từ khóa tìm kiếm">
-                <i class="fas fa-search"></i>
+                <form action="index.php?act=sanpham" method="post">
+                <input type="text" name="kyw" placeholder="Từ khóa tìm kiếm">
+                
+            <button type="submit" name="timkiem"><i class="fas fa-search"></i></button>
+                </form>
                 <a class="search-open">
                     <span class="open-pruduct">Sản phẩm</span>
                     <span class="caret"></span>
