@@ -60,9 +60,6 @@
                 <i class="fa-brands fa-pinterest-p"></i>
             </div>
         </div>
-        <div class="banner-header">
-            <img src="./img/banner1.png" alt="">
-        </div>
         <div class="sildeshow">
             <div class="slideshow-container">
                 <!-- Full-width images with number and caption text -->

@@ -238,10 +238,6 @@ ul.search-ul li:hover {
     background-color: #dc121a;
 }
 
-.sildeshow {
-    margin-top: -19px;
-}
-
 a {
     text-decoration: none;
     display: block;
@@ -356,7 +352,6 @@ a {
     from {
         opacity: .4
     }
-
     to {
         opacity: 1
     }
@@ -390,9 +385,9 @@ a {
     color: #ffba00;
 }
 
-.prod2:hover img {
-    transform: translateY(4px);
-
+.content-border:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1rem 20rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .prod2 img {
@@ -510,7 +505,6 @@ p.icon-name {
     color: #ffba00;
 }
 
-
 .product-sol-content {
     display: flex;
     flex-wrap: wrap;
@@ -524,6 +518,14 @@ p.icon-name {
     box-shadow: 0 1rem 2rem 0 rgb(0 0 0 / 10%);
     display: flex;
     flex-direction: column;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
+}
+
+.produc-sol-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 20rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .produc-sol-item img {
@@ -608,6 +610,9 @@ ul.list-procd2 {
     border-radius: 6px;
     background-color: #fff;
     margin-top: 26px;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
+    transition: transform ease-in 0.1s;
+    will-change: transform;
 }
 
 .border-prod2 {
@@ -856,7 +861,7 @@ a.search-open ul {
 }
 
 .addcart-product {
-    border: 1px solid #ffba00;
+    border: none    ;
     padding: 4px;
     cursor: pointer;
     border-radius: 4px;
@@ -1002,7 +1007,6 @@ a.search-open ul {
 .signin a {
     margin: 6px 0;
     color: #ffba00;
-
 }
 
 table{
@@ -1097,7 +1101,6 @@ td {
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-
 }
 
 .list-header ul {
@@ -1128,8 +1131,6 @@ td {
     color: #000;
 }
 
-
-
 .main-admin {
     height: 100vh;
     display: flex;
@@ -1156,4 +1157,8 @@ td {
     margin: 14px;
     border-radius: 5px;
     font-size: 14px;
+}
+
+.main-left img {
+    margin: 18px;
 }
