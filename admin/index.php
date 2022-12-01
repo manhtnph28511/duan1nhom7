@@ -27,6 +27,9 @@
           if(isset($_POST['themmoi'])&&($_POST['themmoi'])){
             $iddm=$_POST['iddm'];
             $tensp=$_POST['tensp'];
+            $dungluong=$_POST['dungluong'];
+            $dungluong2=$_POST['dungluong2'];
+            $color=$_POST['color'];
             $giasp=$_POST['giasp'];
             $mota=$_POST['mota'];
             $hinh=$_FILES['hinh']['name'];
@@ -37,7 +40,7 @@
               } else {
                 
               }
-            insert_sanpham($tensp,$giasp,$hinh,$mota,$iddm);
+            insert_sanpham($tensp,$dungluong,$dungluong2,$color,$giasp,$hinh,$mota,$iddm);
             $thongbao="thêm thành công";
           }
           $listdanhmuc=loadall_danhmuc();

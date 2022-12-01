@@ -327,3 +327,8 @@ h2{
 .mdh{
     margin: 10px 0;
 }
+.prosp{
+    width: 350px;
+    height: 300px;
+    float: left;
+}

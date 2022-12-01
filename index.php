@@ -31,17 +31,15 @@
             break;
 
         case 'sanphamct':
-            if(isset($_GET['idsp'])&&($_GET['idsp']>0)){
-                $id=($_GET['idsp']);
-                
+             if(isset($_GET['idsp'])&&($_GET['idsp']>0)){
+                 $id=$_GET['idsp'];
                 $onesp=loadone_sanpham($id);
-                extract($onesp);
-                $sp_cungloai=loadone_sanpham_cungloai($id,$iddm);
                 include "view/sanphamct.php";
-            }else{
-                include "view/home.php";
-            } 
+             }else{
+                 include "view/home.php";
+             }
             break;
+            
         case 'dangki':
             if(isset($_POST['dangki'])&&($_POST['dangki'])){
                 $email=$_POST['email'];
@@ -81,18 +79,6 @@
                 }
                     include "view/taikhoan/edittaikhoan.php";
                     break;
-            case 'quenmk':
-                 if(isset($_POST['guiemail'])&&($_POST['guiemail'])){
-                     $email=$_POST['email'];
-                     $checkemail=checkemail($email);
-                     if(is_array($checkemail)){
-                        $thongbao="mat khau cua ban la:".$checkemail['pass'];
-                     }else{
-                        $thongbao="email ko ton tai";
-                     }
-                 }
-                    include "view/taikhoan/quenmk.php";
-                    break;
             case 'thoat':
                 session_unset();
                 header('location:index.php');
@@ -102,10 +88,11 @@
                     $id=$_POST['id'];
                     $name=$_POST['name'];
                     $img=$_POST['img'];
+                    $dungluong=$_POST['dungluong'];
                     $price=$_POST['price'];
                     $soluong=1;
                     $ttien=$soluong*$price;
-                    $spadd=[$id,$name,$img,$price,$soluong,$ttien];
+                    $spadd=[$id,$name,$img,$dungluong,$price,$soluong,$ttien];
                     array_push($_SESSION['mycart'],$spadd);
                     
                 }
@@ -124,7 +111,7 @@
                 $tongdonhang=tongdonhang();
 
                 $idbill=insert_bill($iduser,$name,$email,$address,$tel,$pttt,$ngaydathang,$tongdonhang);
-            //insert into cart :session['mycart]&idbill
+           
             foreach ($_SESSION['mycart'] as $cart){
                 insert_cart($_SESSION['user']['id'],$cart['0'],$cart['2'],$cart['1'],$cart['3'],$cart['4'],$cart['5'],$idbill);
             }

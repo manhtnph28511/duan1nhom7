@@ -69,16 +69,17 @@
              }
              echo '<div class="prod2" '.$mr.'>
              <div class="content">
-                 <img src="'.$hinh.'" alt="">
+             <img src="'.$hinh.'" alt="">
              </div>
-             <div class="name">'.$name.'</div>
+             <div class="name"><a href="'.$linksp.'">'.$name.' </a></div>
              <div class="price">'.$price.'</div>
              <form action="index.php?act=addtocart" method="post">
                 <input type="hidden" name="id" value="'.$id.'">
                 <input type="hidden" name="name" value="'.$name.'">
                 <input type="hidden" name="img" value="'.$img.'">
+                <input type="hidden" name="dungluong" value="'.$dungluong.'">
                 <input type="hidden" name="price" value="'.$price.'">
-                <input type="submit" name="addtocart" id="add"value="thêm vào giỏ hàng" >
+                <input type="submit" name="addtocart" id="add" value="thêm vào giỏ hàng" >
             </form>
          </div>';
             $i+=1;

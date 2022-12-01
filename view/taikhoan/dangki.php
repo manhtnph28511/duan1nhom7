@@ -1,6 +1,6 @@
 <div class="pro">
      <h2>Đăng kí thành viên</h2>
-        <form action="index.php?act=dangki" method="post">
+        <form action="index.php?act=dangnhap" method="post">
             <div class="dk">
                 <h3>Email</h3>
                 <input type="email" id="dk" name="email" >

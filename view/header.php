@@ -25,7 +25,7 @@
             <div class="inout">
                 <a href="index.php?act=dangki" id="icon"><i class="fas fa-user-plus" ></i></a>
                 <a href="index.php?act=thoat" id="icon"><i class="fas fa-sign-out-alt"  ></i></a>
-                <a href="index.php?act=mybill" id="icon"><i class="fas fa-cart-arrow-down"  ></i></a>
+                <a href="index.php?act" id="icon"><i class="fas fa-cart-arrow-down"  ></i>
                  <a href="index.php?act=dangnhap" id="icon"><i class="far fa-user" ></i></a>
             </div>
         </div>

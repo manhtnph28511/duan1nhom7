@@ -38,7 +38,7 @@
             <h2>Chi tiết giỏ hàng<h2>
             <table> 
                 <?php
-                bill_chi_tiet($billct);
+                viewcart(0);
                 ?>
             </table>
         </div>
