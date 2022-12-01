@@ -19,6 +19,7 @@
             <table>
                 <tr>
                    <th></th>
+<<<<<<< HEAD
                    <th>mã loại</th>
                    <th>tên sản phẩm</th>
                    <th>dung lượng</th>
@@ -27,6 +28,17 @@
                    <th>giá</th>
                    <th>mô tả</th>
                    <th>lượt xem</th>
+=======
+                   <th>ma loai</th>
+                   <th>ten san pham</th>
+                   <th>hinh</th>
+                   <th>ram</th>
+                   <th>rom</th>
+                   <th>color</th>
+                   <th>gia</th>
+                   <th>mo ta</th>
+                   <th>luot xem</th>
+>>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
                    <th></th>
                 </tr>
                 <?php
@@ -47,6 +59,9 @@
                     <td>'.$dungluong.','.$dungluong2.'</td>
                     <td>'.$color.'</td>
                     <td>'.$hinh.'</td>
+                    <td>'.$ram.'</td>
+                    <td>'.$rom.'</td>
+                    <td>'.$color.'</td>
                     <td>'.$price.'</td>
                     <td>'.$mota.'</td>
                     <td>'.$luotxem.'</td>

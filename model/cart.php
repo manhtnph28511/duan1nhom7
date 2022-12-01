@@ -117,6 +117,10 @@ function loadall_bill($kyw="",$iduser=0){
     $listbill=pdo_query($sql);
     return $listbill;
 }
+function delete_bill($id){
+    $sql="delete from bill where bill.id=".$id;   
+    pdo_execute($sql);
+}
 function get_ttdh($n){
     switch ($n){
         case '0':
