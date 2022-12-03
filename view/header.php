@@ -13,24 +13,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-    <div class="top">
-        <div class="logo">
-            <img src="/duan1/img/logo.jpg" alt="" >
-        </div>
-        <div class="search">
-            
-           <input type="search" id="search" placeholder="search">
-           <i class="fas fa-search"></i>
-        </input>
-        </div>
-        <div class="log">
-            <div class="inout">
-                <a href="index.php?act=dangki" id="icon"><i class="fas fa-user-plus" ></i></a>
-                <a href="index.php?act=thoat" id="icon"><i class="fas fa-sign-out-alt"  ></i></a>
-                <a href="index.php?act" id="icon"><i class="fas fa-cart-arrow-down"  ></i>
-                 <a href="index.php?act=dangnhap" id="icon"><i class="far fa-user" ></i></a>
-=======
     <div class="header">
         <div class="top">
             <div class="logo">
@@ -58,7 +40,6 @@
                     <a href="index.php?act=mybill" id="icon"><i class="fas fa-cart-arrow-down"></i></a>
                     <a href="index.php?act=dangnhap" id="icon"><i class="far fa-user"></i></a>
                 </div>
->>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
             </div>
         </div>
         <div class="product-header">

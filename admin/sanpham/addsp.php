@@ -30,27 +30,12 @@
                         <input id="input" type="text" name="dungluong2" >
                     </div>
                     <div class="row-mb10">
-                        màu <br>
-                        <input id="input" type="text" name="color" >
-                    </div>
-                    <div class="row-mb10">
                         giá sản phẩm <br>
                         <input id="input" type="text" name="giasp" >
                     </div>
                     <div class="row-mb9">
                         hình <br>
                         <input id="input1" type="file" name="hinh" >
-                    </div>
-                    ram <br>
-                        <input id="input" type="text" name="ram" >
-                    </div>
-                    <div class="row-mb10">
-                        rom<br>
-                        <input id="input" type="text" name="rom" >
-                    </div>
-                    <div class="row-mb9">
-                     color <br>
-                        <input id="input1" type="text" name="color" >
                     </div>
                     <div class="row-mb7">
                         mô tả <br>

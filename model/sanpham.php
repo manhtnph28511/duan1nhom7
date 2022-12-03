@@ -1,11 +1,6 @@
 <?php
-<<<<<<< HEAD
-function insert_sanpham($tensp,$dungluong,$giasp,$hinh,$mota,$iddm){
-    $sql="insert into products (name,dungluong,price,img,mota,iddm) values('$tensp','$dungluong','$giasp','$hinh','$mota','$iddm')";
-=======
-function insert_sanpham($tensp,$giasp,$hinh,$ram,$rom,$color,$mota,$iddm){
-    $sql="insert into products (name,price,img,ram,mota,rom,color,iddm) values('$tensp','$giasp','$hinh','$ram','$rom','$color','$mota','$iddm')";
->>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
+function insert_sanpham($tensp,$giasp,$hinh,$dungluong,$dungluong2,$mota,$iddm){
+    $sql="insert into products (name,price,img,dungluong,dungluong2,mota,iddm) values('$tensp','$giasp','$hinh','$dungluong','$dungluong2','$mota','$iddm')";
     pdo_execute($sql);
 }
 function loadall_sanpham($kyw="",$iddm=0){
@@ -25,13 +20,6 @@ function loadall_sanpham_home(){
     $listsanpham=pdo_query($sql);
     return $listsanpham;
 }
-<<<<<<< HEAD
-function loadone_sanpham($id){
-    $sql="select *from products where id=".$id;
-    $sp=pdo_query_one($sql);
-    return $sp;
-}
-=======
 function loadall_sanpham_top10(){
     $sql="select * from products where 1 order by luotxem desc limit 0,5";
     $listsanpham= pdo_query($sql);
@@ -46,11 +34,11 @@ function loadone_sanpham($id){
     $sp=pdo_query_one($sql);
     return $sp;
 }
-function update_sanpham($id,$iddm,$tensp,$giasp,$mota,$hinh,$ram,$rom,$color){
+function update_sanpham($id,$tensp,$giasp,$hinh,$dungluong,$dungluong2,$mota,$iddm){
     if($hinh!="")
-        $sql="update products set iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."',img='".$hinh."',ram='".$ram."', rom='".$rom."',price='".$color."' where id=".$id;
+        $sql="update products set iddm='".$iddm."', name='".$tensp."',price='".$giasp."',img='".$hinh."',dungluong='".$dungluong."', dungluong2='".$dungluong2."',mota='".$mota."' where id=".$id;
     else
-        $sql="update products set iddm='".$iddm."', name='".$tensp."',price='".$giasp."',mota='".$mota."',ram='".$ram."', rom='".$rom."',price='".$color."' where id=".$id;
+    $sql="update products set iddm='".$iddm."', name='".$tensp."',price='".$giasp."',dungluong='".$dungluong."', dungluong2='".$dungluong2."',mota='".$mota."' where id=".$id;
     pdo_execute($sql);
 }
 function load_ten_dm($iddm){
@@ -64,5 +52,4 @@ function load_ten_dm($iddm){
     }
 }
 
->>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
 ?>
