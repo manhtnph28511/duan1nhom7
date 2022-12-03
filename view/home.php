@@ -34,40 +34,6 @@
 
             </div>
         </div>
-<<<<<<< HEAD
-        <h1> SẢN PHẨM PHỔ BIẾN</h1>
-        <div class="pro2">
-        <?php
-         $i=0;
-         foreach($spnew as $sp){
-             extract($sp);
-             $linksp="index.php?act=sanphamct&idsp=".$id;
-             $hinh=$img_path.$img;
-             if(($i==2)||($i==5)||($i==8)){
-                 $mr="mr";
-             }else{
-                 $mr="";
-             }
-             echo '<div class="prod2" '.$mr.'>
-             <div class="content">
-             <img src="'.$hinh.'" alt="">
-             </div>
-             <div class="name"><a href="'.$linksp.'">'.$name.' </a></div>
-             <div class="price">'.$price.'</div>
-             <form action="index.php?act=addtocart" method="post">
-                <input type="hidden" name="id" value="'.$id.'">
-                <input type="hidden" name="name" value="'.$name.'">
-                <input type="hidden" name="img" value="'.$img.'">
-                <input type="hidden" name="dungluong" value="'.$dungluong.'">
-                <input type="hidden" name="price" value="'.$price.'">
-                <input type="submit" name="addtocart" id="add" value="thêm vào giỏ hàng" >
-            </form>
-         </div>';
-            $i+=1;
-        }
-        ?>
-        
-=======
 
         <div class="product">
             <div class="popular-product">
@@ -135,7 +101,6 @@
             </div>
         </div>
     </div>
->>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
     <div class="below">
         <div class="standing-product">
             <p class="product-name name2"><span class="product_name_color">Sản phẩm</span> nổi bật</p>

@@ -56,11 +56,7 @@
             $tensp=$_POST['tensp'];
             $dungluong=$_POST['dungluong'];
             $dungluong2=$_POST['dungluong2'];
-            $color=$_POST['color'];
             $giasp=$_POST['giasp'];
-            $ram=$_POST['ram'];
-            $rom=$_POST['rom'];
-            $color=$_POST['color'];
             $mota=$_POST['mota'];
             $hinh=$_FILES['hinh']['name'];
             $target_dir = "../uploadimg/";
@@ -70,11 +66,7 @@
               } else {
                 
               }
-<<<<<<< HEAD
-            insert_sanpham($tensp,$dungluong,$dungluong2,$color,$giasp,$hinh,$mota,$iddm);
-=======
-            insert_sanpham($tensp,$giasp,$hinh,$ram,$rom,$color,$mota,$iddm);
->>>>>>> 6987bbe40b7d635f21c76a05e99dccd2ea95bbb6
+              insert_sanpham($tensp,$giasp,$hinh,$dungluong,$dungluong2,$mota,$iddm);
             $thongbao="thêm thành công";
           }
           $listdanhmuc=loadall_danhmuc();
@@ -113,6 +105,8 @@
                   $iddm=$_POST['iddm'];
                   $tensp=$_POST['tensp'];
                   $giasp=$_POST['giasp'];
+                  $dungluong=$_POST['dungluong'];
+                  $dungluong2=$_POST['dungluong2'];
                   $mota=$_POST['mota'];
                   $hinh=$_FILES['hinh']['name'];
                   $target_dir = "../uploadimg/";
@@ -122,7 +116,7 @@
                     } else {
                       
                     }
-                    update_sanpham($id,$iddm,$tensp,$giasp,$mota,$hinh);
+                    update_sanpham($id,$tensp,$giasp,$hinh,$dungluong,$dungluong2,$mota,$iddm);
                     $thongbao="Cập nhật thành công";
                 }
                 $listdanhmuc= loadall_danhmuc();

@@ -40,15 +40,13 @@
                         <input id="input1" type="file" name="hinh">
                         <?=$hinh?>
                     </div>
-                    ram<br>
-                        <input id="input" type="text" name="tensp" value="<?=$ram?>">
-                    </div> 
                     <div class="row-mb10">
-                        rom <br>
-                        <input id="input" type="text" name="giasp" value="<?=$rom?>">
+                    dung luong <br>
+                        <input id="input" type="text" name="dungluong" value="<?=$dungluong?>">
+                    </div>
                     <div class="row-mb10">
-                        color<br>
-                        <input id="input" type="text" name="giasp" value="<?=$color?>">
+                    dung luong 2<br>
+                        <input id="input" type="text" name="dungluong2" value="<?=$dungluong2?>">
                     </div>
                     <div class="row-mb7">
                         mo ta <br>
