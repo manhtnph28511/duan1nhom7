@@ -60,7 +60,7 @@ function pdo_query($sql){
         $stmt = $conn->prepare($sql);
         $stmt->execute($sql_args);
         $rows = $stmt->fetchAll();
-        return $rows;
+        return $rows;         
     }
     catch(PDOException $e){
         throw $e;
