@@ -1,89 +1,252 @@
-<div class="sildeshow">
-        <div class="slideshow-container">
+<div class="container">
+    <div class="main">
+        <div class="product-sol">
+            <h2>PRODUCT SOLUTIONS</h2>
+            <div class="product-sol-content">
+                <a href="" class="produc-sol-item">
+                    <img src="./img/img1.jpg" alt="">
+                    <div class="product-info">
+                        <h4>Mobile</h4>
+                        <p>Complete facilities, advanced technology, powerful production capacity!</p>
+                    </div>
+                </a>
+                <a href="" class="produc-sol-item">
+                    <img src="./img/img3.jpg" alt="">
+                    <div class="product-info">
+                        <h4>Mobile</h4>
+                        <p>Complete facilities, advanced technology, powerful production capacity!</p>
+                    </div>
+                </a>
+                <a href="" class="produc-sol-item">
+                    <img src="./img/img3.jpg" alt="">
+                    <div class="product-info">
+                        <h4>Mobile</h4>
+                        <p>Complete facilities, advanced technology, powerful production capacity!</p>
+                    </div>
+                </a>
+                <a href="" class="produc-sol-item">
+                    <img src="./img/img4.jpg" alt="">
+                    <div class="product-info">
+                        <h4>Mobile</h4>
+                        <p>Complete facilities, advanced technology, powerful production capacity!</p>
+                    </div>
+                </a>
 
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-                <div class="numbertext">1 / 4</div>
-                <img src="/duan1/img/iphone14.jpg" width="1400px" height="500px">
-                <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="numbertext">2 / 4</div>
-                <img src="/duan1/img/oppo.jpg" width="1400px" height="500px">
-                <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-                <div class="numbertext">3 / 4</div>
-                <img src="/duan1/img/samsung.webp" width="1400px" height="500px">
-                <div class="text">Caption Three</div>
-            </div>
-            <div class="mySlides fade">
-                <div class="numbertext">4 / 4</div>
-                <img src="/duan1/img/xiaomi m12.jpg" width="1400px" height="500px" >
-                <div class="text">Caption Three</div>
-                </div>
-            
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-            
-            <!-- The dots/circles -->
-            <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-            <span class="dot" onclick="currentSlide(4)"></span>
-            </div>
-    </div>
-    <div class="product">
-        <div class="pro1">
-            <div class="sanpham1">
-                <img src="/duan1/img/ipad.jpg" alt="">
-            </div>
-            <div class="sanpham1">
-                <img src="/duan1/img/airpost.jpg" alt="">
-            </div>
-            <div class="sanpham1">
-                <img src="/duan1/img/iphonexsmax.jpg" alt="">
-            </div>
-            <div class="sanpham1">
-                <img src="/duan1/img/smartwatch.jpg" alt="">
             </div>
         </div>
-        <h1> SẢN PHẨM PHỔ BIẾN</h1>
-        <div class="pro2">
-        <?php
-         $i=0;
-         foreach($spnew as $sp){
-             extract($sp);
-             $linksp="index.php?act=sanphamct&idsp=".$id;
-             $hinh=$img_path.$img;
-             if(($i==2)||($i==5)||($i==8)){
-                 $mr="mr";
-             }else{
-                 $mr="";
-             }
-             echo '<div class="prod2" '.$mr.'>
-             <div class="content">
-                 <img src="'.$hinh.'" alt="">
-             </div>
-             <div class="name">'.$name.'</div>
-             <div class="price">'.$price.'</div>
-             <form action="index.php?act=addtocart" method="post">
-                <input type="hidden" name="id" value="'.$id.'">
-                <input type="hidden" name="name" value="'.$name.'">
-                <input type="hidden" name="img" value="'.$img.'">
-                <input type="hidden" name="price" value="'.$price.'">
-                <input type="submit" name="addtocart" id="add"value="thêm vào giỏ hàng" >
-            </form>
-         </div>';
-            $i+=1;
-        }
-        ?>
-        
-    <div class="below">
+
+        <div class="product">
+            <div class="popular-product">
+                <p class="product-name"><span class="product_name_color">Sản phẩm</span> phổ biến</p>
+                <div class="product-icon">
+                    <a href="" class="col-icon">
+                        <i class="fa-solid fa-laptop"></i>
+                        <p class="icon-name">Phụ kiện macbook</p>
+                    </a>
+                    <a href="" class="col-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p class="icon-name">Phụ kiện điện thoại</p>
+                    </a>
+                    <a href="" class="col-icon">
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <p class="icon-name">Phụ kiện Ipad</p>
+                    </a>
+                    <a href="" class="col-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <p class="icon-name">Phụ kiến khác</p>
+                    </a>
+                    <a href="" class="col-icon">
+                        <i class="fa-solid fa-gift"></i>
+                        <p class="icon-name">Quà tặng</p>
+                    </a>
+                </div>
+                <div class="pro2">
+                    <?php
+                    $i = 0;
+                    foreach ($spnew as $sp) {
+                        extract($sp);
+                        $linksp = "index.php?act=sanphamct&idsp=" . $id;
+                        $hinh = $img_path . $img;
+                        // if (($i == 2) || ($i == 5) || ($i == 8)) {
+                        //     $mr = "mr";
+                        // } else {
+                        //     $mr = "";
+                        // }
+                        echo
+                        '<div class="prod2">
+                            <div href="" class="content-border">
+                                <a href="#">
+                                    <div class="dmimg">
+                                        <img src="' . $hinh . '" alt="">
+                                    </div>
+                                    <div class="name">' . $name . '</div>
+                                    <div class="price-pro">
+                                        <div class="price">' . $price . '</div>
+                                        <div class="price-before">10.000.000</div>
+                                    </div>
+                                </a>
+                                <form action="index.php?act=addtocart" method="post">
+                                    <input type="hidden" name="id" value="' . $id . '">
+                                    <input type="hidden" name="name" value="' . $name . '">
+                                    <input type="hidden" name="img" value="' . $img . '">
+                                    <input type="hidden" name="price" value="' . $price . '">
+                                    <input type="submit" name="addtocart" id="add"value="Thêm vào giỏ hàng" >
+                                </form>
+                            </div>
+                        </div>';
+                        $i += 1;
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="below">
+        <div class="standing-product">
+            <p class="product-name name2"><span class="product_name_color">Sản phẩm</span> nổi bật</p>
+        </div>
+        <div class="danhmuc">
+            <div class="dm-content">
+                <?php
+                foreach ($spnew as $sp) {
+                    extract($sp);
+                    $linksp = "index.php?act=sanphamct&idsp=" . $id;
+                    $hinh = $img_path . $img;
+                    echo '
+                        <div class="prod2 dm-content-item border-prod2">
+                            <div href="" class="content-border">
+                                <a href="#">
+                                    <div class="dmimg">
+                                        <img src="' . $hinh . '" alt="">
+                                    </div>
+                                    <div class="name">' . $name . '</div>
+                                    <div class="price-pro">
+                                        <div class="price">' . $price . '</div>
+                                        <div class="price-before">10.000.000</div>
+                                    </div>
+                                </a>
+                                <form action="index.php?act=addtocart" method="post">
+                                    <input type="hidden" name="id" value="' . $id . '">
+                                    <input type="hidden" name="name" value="' . $name . '">
+                                    <input type="hidden" name="img" value="' . $img . '">
+                                    <input type="hidden" name="price" value="' . $price . '">
+                                    <input type="submit" name="addtocart" id="add"value="Thêm vào giỏ hàng" >
+                                </form>
+                            </div>
+                        </div>';
+                    $i += 1;
+                }
+                ?>
+            </div>
+        </div>
+        <div class="product-content2">
+            <div class="top-product">
+                <div class="product-rate">
+                    <p class="product-name name2 name3"><span class="product_name_color">Top</span> Rated</p>
+                    <div class="rate-content">
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-rate">
+                    <p class="product-name name2 name3"><span class="product_name_color">Top</span> Rated</p>
+                    <div class="rate-content">
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-rate">
+                    <p class="product-name name2 name3"><span class="product_name_color">Top</span> Rated</p>
+                    <div class="rate-content">
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content_item-child">
+                            <img src="./img/pen.png" alt="">
+                            <div class="item__child-info">
+                                <div class="name name-rate">Bút vẽ siêu mảnh Adonit Jot Pro 3.0</div>
+                                <div class="price-pro">
+                                    <div class="price">18.000.000đ</div>
+                                    <div class="price-before">10.000.000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

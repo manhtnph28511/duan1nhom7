@@ -135,6 +135,14 @@
             $billct=loadall_cart($idbill);
             include "view/cart/billcomfirm.php";
             break;
+        case 'delcart':
+            if(isset($_GET['idcart'])){
+              array_splice($_SESSION['mycart'],$_GET['idcart'],1);
+            }else{
+                $_SESSION['mycart']=[];
+            }
+            include "view/cart/viewcart.php";
+            break;
         case 'bill':
             include "view/cart/bill.php";
             break;
