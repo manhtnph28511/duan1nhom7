@@ -1,0 +1,334 @@
+*{
+    padding: 1;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.top{
+    width: 1518px;
+    height: 120px;
+}
+.logo{
+    float: left;
+    width: 200px;
+    height: 115px;
+    margin: 0 100px;
+}
+.logo img{
+    width: 70%;
+    height: 115px;
+}
+
+.search{
+    width: 700px;
+    float: left;
+    height: 120px;
+    margin:0 100px 0 0;
+}
+#search{
+    width: 670px;
+    height:50px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+.log{
+    width: 300px;
+    height: 120px;
+    float: left;
+}
+.inout{
+    width: 300px;
+    height: 120px;
+    margin: 43px 0;
+}
+#icon{
+    margin: 0 20px;
+    float: left;
+}
+header{
+    width: 1518px;
+    height: 70px;
+    margin: 20px 0;
+}
+nav{
+    width: 700px;
+    height: 70px;
+    float: left;
+    margin: 0 70px;
+}
+ul{
+    margin: 20px;
+    list-style-type: none;
+}
+li{
+    width: 120px;
+    height: 50px;
+    float: left;
+}
+a{
+    text-decoration:none;
+    display: block;
+    font-size: 20px;
+}
+.sanpham{
+    width: 200px;
+    float: left;
+    margin: 20px 70px;
+}
+.phai{
+    float: left;
+    width: 200px;
+    height: 70px;
+}
+#icon2{
+    height: 50px;
+    float: left;
+    margin: 20px 10px;
+    font-size: 30px;
+}
+.slideshow{
+    width: 1518px;
+    height: 500px;
+   margin: 0 20px;
+}
+.slideshow-container {
+    max-width: 1400px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+.product{
+    width: 1518px;
+    height: 1300px;
+}
+.pro1{
+    width: 1250px;
+    height: 300px;
+    margin: 0 135px;
+}
+.sanpham1{
+    width: 250px;
+    height: 300px;
+    float:left;
+    margin: 0 30px;
+}
+.sanpham1 img{
+    width: 250px;
+    height: 280px;
+}
+h1{
+    text-align: center;
+    margin: 30px 0;
+    height: 30px;
+   
+}
+.pro2{
+    width: 1518px;
+    height: 800px;
+}
+.prod2{
+    width:300px;
+    height: 300px;
+    float: left;
+    margin: 0 35px;
+}
+.content{
+    width: 300px;
+    height: 230px;
+}
+.content>img{
+    width: 290px;
+    height: 230px;
+}
+.name{
+    width: 290px;
+    height: 20px;
+    text-align: center;
+}
+.price{
+    width: 290px;
+    height: 20px;
+    text-align: center;
+}
+#add{
+    text-align: center;
+    margin: 0 80px;
+}
+.below{
+    width:1518px ;
+    height: 500px;
+}
+.danhmuc{
+    width: 700px;
+    height: 500px;
+    float: left;
+}
+.dm1{
+    width: 700px;
+    height: 50px;
+    margin: 10px 0;
+}
+.dm1 img{
+    width: 400px;
+    height: 50px;
+    float: left;
+}
+.ten{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+.topbanchay{
+    width: 770px;
+    height: 500px;
+    float: left;
+}
+.footer{
+    width: 1518px;
+    height: 360px;
+    text-align: center;
+}
+.footer img{
+    width: 1518px;
+    height: 360px;
+}
+table tr th{
+    padding: 10px 10px;
+}
+table tr td {
+    padding: 10px 10px;
+}
+td img{
+    width: 10%;
+}
+th img{
+    width: 25%;
+}
+h2{
+    text-align: center;
+}
+.dk{
+    width: 700px;
+    height: 70px;
+    margin: 0 400px;
+}
+#dk{
+    width: 650px;
+    height: 35px;
+    border-radius: 20px;
+}
+#dk1{
+    width: 350px;
+    height: 28px;
+    border-radius: 20px;
+    border: 1px solid red;
+    margin: 10px 600px;
+    background-color: #717171;
+    color: white;
+}
+#dki{
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    margin: 0 660px;
+}.pron{
+    width: 700px;
+    margin: 0 400px;
+}
+#dk2{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+.dat{
+    margin: 0 300px;
+}
+.dat1{
+    margin: 0 600px;
+}
+.mdh{
+    margin: 10px 0;
+}
+.prosp{
+    width: 350px;
+    height: 300px;
+    float: left;
+}

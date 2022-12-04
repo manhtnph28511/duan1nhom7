@@ -12,6 +12,7 @@ function viewcart($del){
      echo '<tr>
      <th>Hình</th>
      <th>Sản phẩm</th>
+     <th>Dung lượng</th>
      <th>Đơn giá</th>
      <th>Số lượng</th>
      <th>Thành tiền</th>
@@ -19,7 +20,7 @@ function viewcart($del){
  </tr>';
     foreach ($_SESSION['mycart'] as $cart){
         $hinh=$img_path.$cart[2];
-         $ttien=$cart[3]*$cart[4];
+         $ttien=$cart[4]*$cart[5];
          $tong+=$ttien;
          if($del==1){
              $xoasp_td='<a href="index.php?act=idcart='.$i.'"><input type="button" value="xoa"></a>';
@@ -33,13 +34,14 @@ function viewcart($del){
         <th>'.$cart[1].'</th>
         <th>'.$cart[3].'</th>
         <th>'.$cart[4].'</th>
+        <th>'.$cart[5].'</th>
         <th>'.$ttien.'</th>
         <th>'.$xoasp_td.'</th>
         </tr>';
         $i+=1;
      }
      echo '<tr>
-     <th colspan="4">Tong don hang</th>
+     <th colspan="4">Tổng đơn hàng</th>
     
      <th>'.$tong.'</th>
      <th></th>
@@ -60,8 +62,6 @@ function bill_chi_tiet($listbill){
     foreach ($listbill as $cart){
         $hinh=$img_path.$cart['img'];
         $tong+=$cart['thanhtien'];
-       
-        
         echo ' 
         <tr>
         <th><img src="'.$hinh.'" id="view"></th>
@@ -73,7 +73,7 @@ function bill_chi_tiet($listbill){
         $i+=1;
     }
     echo '<tr>
-    <th colspan="4">tổng đơn hàng </th>
+    <th colspan="4">tổng sản phẩm</th>
     
     <th>'.$tong.'</th>
     </tr>';
@@ -81,7 +81,7 @@ function bill_chi_tiet($listbill){
 function tongdonhang(){
     $tong=0;
     foreach ($_SESSION['mycart'] as $cart){
-        $ttien=$cart[3]*$cart['4'];
+        $ttien=$cart[4]*$cart['5'];
         $tong+=$ttien;
     }
     return $tong;
@@ -116,6 +116,10 @@ function loadall_bill($kyw="",$iduser=0){
     $sql.= " order by id desc";
     $listbill=pdo_query($sql);
     return $listbill;
+}
+function delete_bill($id){
+    $sql="delete from bill where bill.id=".$id;   
+    pdo_execute($sql);
 }
 function get_ttdh($n){
     switch ($n){
