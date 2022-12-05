@@ -25,7 +25,7 @@
                 echo '<tr>
                 <td colspan="4">Tổng đơn hàng</td>
 
-                <td>'.$tong.'</td>
+                <td id="tongtien">'.$tong.'</td>
                 <td></td>
                 </tr>';
                 viewcart(1);

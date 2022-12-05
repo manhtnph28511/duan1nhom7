@@ -77,9 +77,9 @@
                             <div href="" class="content-border">
                                 <a href="#">
                                     <div class="dmimg">
-                                        <img src="' . $hinh . '" alt="">
+                                    <a href="'. $linksp .'"> <img src="' . $hinh . '" alt=""> </a>
                                     </div>
-                                    <div class="name"> <a href="' . $linksp . '">' . $name . ' </a></div>
+                                    <div class="name"> <a href="'. $linksp .'">' . $name . ' </a></div>
                                     <div class="price-pro">
                                         <div class="price">' . $price . 'đ</div>
                                         <div class="price-before">10.000.000đ</div>
@@ -117,7 +117,7 @@
                             <div href="" class="content-border">
                                 <a href="#">
                                     <div class="dmimg">
-                                        <img src="' . $hinh . '" alt="">
+                                    <a href="'. $linksp .'"> <img src="' . $hinh . '" alt=""> </a>
                                     </div>
                                     <div class="name"> <a href="' . $linksp . '">' . $name . ' </a></div>
                                     <div class="price-pro">
