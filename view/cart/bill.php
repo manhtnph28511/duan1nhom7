@@ -35,24 +35,22 @@
             </table>
         </div>
         <div class="dat">
-            <h4>Phương Thức Thanh Toán</h4>
-            <table>
-                <tr>
-                    <td><input type="radio" value="1" name="pttt" checked>Thanh Toán COD</td>
-                    <td><input type="radio" value="3" name="pttt" checked>Thanh Toán Online</td>
-                </tr>
-            </table>
-        </div>
-        <div class="dat">
             <table>
                 <?php viewcart(0); ?>
             </table>
-
-            <div class="dat">
-                <a href="#"><input type="submit" id="" value="Đồng Ý Đặt Hàng" name="dongydathang"></a>
-            </div>
-        </div>
     </form>
+        <div class="dat">
+            <h4>Phương Thức Thanh Toán</h4>
+            <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="view/cart/xulythanhtoanmomo.php">
+                          <input type="submit" name="momo" value="Thanh toán momo">
+            </form><br>
+            <form class="" method="POST" target="_blank" enctype="application/x-www-form-urlencoded"
+                          action="view/cart/xulythanhtoanmomo_atm.php">
+                          <input type="submit" name="momo" value="Thanh toán momo ATM">
+            </form>
+        </div>
+        
 </div>
 
 </div>
