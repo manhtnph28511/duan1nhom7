@@ -1,48 +1,67 @@
 <?php
-    if(is_array($tk)){
-        extract($tk);
-    }
+if (is_array($sanpham)) {
+    extract($sanpham);
+}
+$hinhpath = "../uploadimg/" . $img;
+if (is_file($hinhpath)) {
+    $hinh = "<img src='" . $hinhpath . "' width='60px' ";
+} else {
+    $hinh = "no photo";
+}
 ?>
-<div class="row">
-            <div class="row frmtitle">
-                <H1>SỬA TÀI KHOẢN/H1>
-            </div>
-            <div class="row frmcontent">
-            <form action="index.php?act=updatetk" method="post">
-                    <div class="row mb">
-                        Mã tài khoản<br>    
-                        <input type="text" name="masp" disabled>
-                    </div>
-                    <div class="row mb">
-                    Tên đăng nhập
-                        <input type="text" name="user" value="<?=$user?>">
-                    </div>
-                    <div class="row mb">
-                    Mật khẩu
-                        <input type="password" name="pass" value="<?=$pass?>">
-                    </div>
-                    <div class="row mb">
-                    Email
-                        <input type="email" name="email" value="<?=$email?>">
-                    </div>
-                    <div class="row mb">
-                    Địa chỉ
-                        <input type="text" name="address"  value="<?=$address?>">
-                    </div>
-                    <div class="row mb">
-                            Số điện thoại
-                        <input type="text" name="tel"  value="<?=$tel?>">
-                        </div>
-                    <div class="row mb">
-                        <br>
-                        <input type="hidden" name="id" value="<?=$id?>">
-                        <input type="submit" name="capnhat" value="Cập nhật">
-                        <input type="reset" value="Nhập lại">
-                        <a href="index.php?act=dskh"><input type="button" value="DANH SÁCH"></a>
-                    </div>
+<div class="bot">
+    <div class="bot-title">
+        <h1>Cập Nhập Hàng Hóa</h1>
+    </div>
+    <div class="bot-content">
+        <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
+            <div class="bot-category">
+                <select name="iddm">
+                    <option value="0" selected>All</option>
                     <?php
-                    if(isset($thongbao)&&($thongbao!="")) echo $thongbao;
+                    foreach ($listdanhmuc as $danhmuc) {
+                        extract($danhmuc);
+                        if ($iddm == $id) $s = "selected";
+                        else $s = "";
+                        echo '<option value="' . $id . '" ' . $s . '>' . $name . '</option>';
+                    }
                     ?>
-                </form>
+                </select>
             </div>
-        </div>
+            <div class="bot-input">
+                <p>Tên sản phẩm</p>
+                <input id="input" type="text" name="tensp" value="<?= $name ?>">
+            </div>
+            <div class="bot-input">
+                <p>Giá sản phẩm</p>
+                <input id="input" type="text" name="giasp" value="<?= $price ?>">
+            </div>
+            <div class="bot-input">
+                <p>Hình ảnh</p>
+                <input id="input1" type="file" name="hinh"><br>
+                <?= $hinh ?>
+            </div>
+            <div class="bot-input">
+                <p>Dung ượng</p>
+                <input id="input" type="text" name="dungluong" value="<?= $dungluong ?>">
+            </div>
+            <div class="bot-input">
+                <p>Dung lượng 2</p>
+                <input id="input" type="text" name="dungluong2" value="<?= $dungluong2 ?>">
+            </div>
+            <div class="bot-add">
+                <p>Mô Tả</p>
+                <textarea name="mota" id="" cols="30" rows="10"><?= $mota ?></textarea>
+            </div>
+            <div class="bot-btn">
+                <input type="hidden" name="id" value="<?= $id ?>">
+                <input type="submit" name="capnhat" value="Cập Nhật">
+                <input type="reset" value="Nhập Lại">
+                <a href="index.php?act=listsp"><input type="button" value="Danh Sách"></a>
+            </div>
+            <?php
+            if (isset($thongbao) && ($thongbao != "")) echo $thongbao;
+            ?>
+        </form>
+    </div>
+</div>

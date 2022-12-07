@@ -51,11 +51,29 @@ span.open-pruduct {
     right: 44px;
 }
 
-i.fas.fa-search {
-    position: absolute;
+.del-cart {
+    height: 26px;
+    width: 46px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #AC3131;
+    cursor: pointer;
+}
+
+.search-btn i {
     right: 166px;
     top: 11px;
     z-index: 1;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.form-header button {
+    border: none;
+    background: #fff;
+    padding: 0px 10px;
+    cursor: pointer;
 }
 
 input[type="search"] {
@@ -92,6 +110,17 @@ input[type="search"] {
 
 #icon {
     margin: 0 12px;
+}
+
+.form-header {
+    width: 100%;
+}
+
+.search-header {
+    width: 68%;
+    height: 36px;
+    border: none;
+    outline: none;
 }
 
 .product-header {
@@ -358,8 +387,7 @@ a {
 }
 
 .pro2 {
-    width: 100%;
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -367,8 +395,9 @@ a {
 
 .prod2 {
     width: 25%;
-    position: relative;
+    height: 100%;
     padding: 0 15px;
+    margin-top: 20px;
 }
 
 .prod2 .name {
@@ -392,6 +421,7 @@ a {
 
 .prod2 img {
     width: 100%;
+    padding-top: 10px;
 }
 
 .price {
@@ -609,7 +639,6 @@ ul.list-procd2 {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 6px;
     background-color: #fff;
-    margin-top: 26px;
     box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.1);
     transition: transform ease-in 0.1s;
     will-change: transform;
@@ -633,6 +662,8 @@ ul.list-procd2 {
 .content_item-child {
     display: flex;
     margin: 14px -14px 0 -14px;
+    color: #333;
+    height: 120px;
 }
 
 .content_item-child img {
@@ -657,6 +688,7 @@ ul.list-procd2 {
 .product-rate {
     margin-right: 20px;
     margin-left: 20px;
+    width: 33.333%;
 }
 
 .name3 {
@@ -1017,6 +1049,7 @@ table, td, th {
     border: 1px solid #ccc;
     border-collapse: collapse;
     padding: 10px;
+    font-size: 16px;
 }
 
 th {
@@ -1161,4 +1194,148 @@ td {
 
 .main-left img {
     margin: 18px;
+}
+
+.product-desc {
+    display: flex;
+    width: 90%;
+    margin: 0 auto 60px;
+}
+
+.podesc-list1 {
+    width: 30%;
+}
+
+.podesc-list1 img {
+    width: 100%;
+}
+
+.prodesc-list {
+    display: flex;
+    margin-top: 58px;
+    border-left: 1px solid #ccc;
+    padding-left: 35px;
+}
+
+.content_item-child img {
+    object-fit: contain;
+}
+
+.podesc-list2 {
+    margin: 0 70px 0 40px;
+}
+
+.podesc-list2__name {
+    font-size: 30px;
+    font-family: 'Patrick Hand', cursive;
+    color: #222;
+}
+
+.podesc-list2__price {
+    color: #ffba00;
+    font-family: 'Patrick Hand', cursive;
+    margin: 4px 0;
+    font-size: 24px;
+}
+
+.prosp {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 10px;
+}
+
+.prodesc-input input[type="submit"] {
+    height: 28px;
+    width: 65px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.prodect-content__title {
+    height: 40px;
+    padding-left: 20px;
+    background: #ffba00;
+    line-height: 40px;
+    border-radius: 6px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.desc-pro__cart {
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #f2d739;
+    height: 30px;
+}
+
+.prodect-content {
+    width: 80%;
+    margin: auto;
+}
+
+.prodect-content__info {
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 22px;
+    margin: 18px 0;
+}
+
+.img-prodesc {
+    text-align: center;
+}
+
+.prodect-address p {
+    font-size: 18px;
+    color: #995501;
+    margin-bottom: 8px;
+}
+
+.prodect-address ul li {
+    line-height: 24px;
+}
+
+.prodect-address ul {
+    list-style: none;
+    margin: 15px;
+}
+
+.desc-pro__c1 {
+    background: #5d83db;
+    cursor: pointer;
+}
+
+.desc-pro__c1,
+.desc-pro__cart {
+    display: inline;
+    width: 238px;
+    height: 50px;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    margin-right: 6px;
+}
+
+.desc-pro__c2 {
+    width: 486px;
+    height: 50px;
+    text-align: center;
+    background: #fa9d4d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #fff;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.prodesc-btn {
+    margin-top: 20px;
 }

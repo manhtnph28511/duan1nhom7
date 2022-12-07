@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="view/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,10 +20,9 @@
                 <a href="./index.php"><img src="https://electronic-09.web4s.vn/uploads/plugin/setting/3/ph-ki-n-cong-ngh-logo.jpg" alt=""></a>
             </div>
             <div class="search">
-                <form action="index.php?act=sanpham" method="post">
-                <input type="text" name="kyw" placeholder="Từ khóa tìm kiếm">
-                
-            <button type="submit" name="timkiem"><i class="fas fa-search"></i></button>
+                <form class="form-header" action="index.php?act=sanpham" method="post">
+                    <input type="text" class="search-header" name="kyw" placeholder="Từ khóa tìm kiếm">
+                    <button type="submit" class="search-btn" name="timkiem"><i class="fas fa-search"></i></button>
                 </form>
                 <a class="search-open">
                     <span class="open-pruduct">Sản phẩm</span>
@@ -63,27 +63,3 @@
                 <i class="fa-brands fa-pinterest-p"></i>
             </div>
         </div>
-        <div class="sildeshow">
-            <div class="slideshow-container">
-                <!-- Full-width images with number and caption text -->
-                <div class="mySlides fade">
-                    <img src="./img/sl1.jpg" width="1400px" height="500px">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="./img/sl2.jpg" width="1400px" height="500px">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="./img/sl3.jpg" width="1400px" height="500px">
-                </div>
-                <div class="mySlides fade">
-                    <img src="./img/sl4.jpg" width="1400px" height="500px">
-                </div>
-
-                <!-- Next and previous buttons -->
-                <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
-                <a class="next" onclick="plusDivs(-1)">&#10095;</a>
-            </div>
-        </div>
-    </div>
